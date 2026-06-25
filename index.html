@@ -55,7 +55,7 @@
             alt="Sultzer &amp; Lipari"
             alt="Sultzer & Lipari"
         /></a>
-        <nav>
+        <nav id="mainNav">
           <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About Us</a></li>
@@ -64,10 +64,19 @@
             <li><a href="#practice">Commercial Litigation</a></li>
             <li><a href="#practice">Other Practice Areas</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <li class="menu-cta-mobile">
+              <a href="#contact" class="nav-cta">Free Consultation</a>
+            </li>
           </ul>
         </nav>
         <a href="#contact" class="nav-cta">Free Consultation</a>
-        <button class="burger" aria-label="Menu">
+        <button
+          class="burger"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
           <span></span><span></span><span></span>
         </button>
       </div>
