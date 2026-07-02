@@ -1,44 +1,30 @@
-// Sticky header shadow on scroll
-const header = document.getElementById("header");
-const burger = document.querySelector(".burger");
-const menuLinks = document.querySelectorAll(".menu a");
+const header = document.getElementById("site-header");
+const toggle = document.querySelector(".site-header__toggle");
+const menuLinks = document.querySelectorAll(".site-header__menu a");
 
-addEventListener("scroll", () =>
-  header.classList.toggle("scrolled", scrollY > 20),
-);
-
-// Mobile hamburger menu
 function setMenuOpen(open) {
-  header.classList.toggle("nav-open", open);
-  burger.setAttribute("aria-expanded", open);
-  document.body.style.overflow = open ? "hidden" : "";
+  header.classList.toggle("is-open", open);
+  toggle.setAttribute("aria-expanded", String(open));
+  document.body.classList.toggle("is-menu-open", open);
 }
 
-burger.addEventListener("click", () => {
-  setMenuOpen(!header.classList.contains("nav-open"));
+toggle.addEventListener("click", () => {
+  setMenuOpen(!header.classList.contains("is-open"));
 });
 
 menuLinks.forEach((link) => {
   link.addEventListener("click", () => setMenuOpen(false));
 });
 
-addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && header.classList.contains("nav-open")) {
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && header.classList.contains("is-open")) {
     setMenuOpen(false);
   }
 });
 
-// Scroll reveal animations
-const io = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("in");
-        io.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15 },
-);
-
-document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+const form = document.querySelector(".form");
+if (form) {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
+}

@@ -7,515 +7,535 @@
       Sultzer &amp; Lipari | Elite Class Action &amp; Litigation Firm
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- TOP BAR -->
-    <div class="topbar">
-      <div class="wrap">
-        <div class="left">
-          <span
-            ><svg
-              width="13"
-              height="13"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="gold"
-            >
-              <path
-                d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"
-              />
-            </svg>
-            Poughkeepsie, NY &amp; Nationwide</span
-          >
-          <span
-            >Over <span class="gold">$1 Billion</span> Recovered for Our
-            Clients</span
-          >
-        </div>
-        <div class="right">
-          <a href="#contact">Make a Payment</a>
-          <a href="#contact">Client Portal</a>
-          <a href="tel:8005520265" class="gold">(800) 552-0265</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- HEADER -->
-    <header id="header">
-      <div class="wrap nav">
-        <a href="#" class="brand"
-          ><img
-            src="images/logo.png"
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a href="#home" class="site-header__logo">
+          <img
+            src="assets/images/logo.png"
             alt="Sultzer &amp; Lipari"
-            alt="Sultzer & Lipari"
-        /></a>
-        <nav id="mainNav">
-          <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#about">Our Attorneys</a></li>
-            <li><a href="#practice">Class Actions</a></li>
-            <li><a href="#practice">Commercial Litigation</a></li>
-            <li><a href="#practice">Other Practice Areas</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li class="menu-cta-mobile">
-              <a href="#contact" class="nav-cta">Free Consultation</a>
+            width="500"
+            height="252"
+          />
+        </a>
+
+        <nav class="site-header__nav" id="site-nav">
+          <ul class="site-header__menu">
+            <li class="site-header__menu-item"><a href="#home">Home</a></li>
+            <li class="site-header__menu-item">
+              <a href="#about">About Us</a>
+            </li>
+            <li class="site-header__menu-item">
+              <a href="#attorneys">Our Attorneys</a>
+            </li>
+            <li class="site-header__menu-item">
+              <a href="#class-actions">Class Actions</a>
+            </li>
+            <li class="site-header__menu-item">
+              <a href="#commercial-litigation">Commercial Litigation</a>
+            </li>
+            <li class="site-header__menu-item">
+              <a href="#other-practice-areas">Other Practice Areas</a>
+            </li>
+            <li class="site-header__menu-item site-header__menu-item--mobile">
+              <a href="#contact">Contact Us</a>
+            </li>
+            <li class="site-header__menu-item site-header__menu-item--mobile">
+              <a href="tel:8005520265" class="site-header__menu-phone"
+                >(800) 552-0265</a
+              >
+            </li>
+            <li class="site-header__menu-item site-header__menu-item--mobile">
+              <a href="#contact" class="btn btn--gold site-header__menu-cta"
+                >Free Consultation</a
+              >
             </li>
           </ul>
         </nav>
-        <a href="#contact" class="nav-cta">Free Consultation</a>
+
+        <div class="site-header__actions">
+          <a href="tel:8005520265" class="site-header__phone">
+            <svg viewBox="0 0 512 512" aria-hidden="true">
+              <path
+                d="M493.4 24.6l-104-24a24 24 0 0 0-27.5 13.9l-48 112a24 24 0 0 0 6.9 27.6l60.6 49.6a24 24 0 0 0 29.7 1.9l88.2-44.2c24.5 51.7 39.8 109.5 44.5 170.5a24 24 0 0 0 24 24h112a24 24 0 0 0 24-24C512 263.4 431.6 96.6 493.4 24.6z"
+              />
+            </svg>
+            <span class="site-header__phone-label">(800) 552-0265</span>
+          </a>
+          <a href="#contact" class="btn btn--gold site-header__cta"
+            >Free Consultation</a
+          >
+        </div>
+
         <button
-          class="burger"
+          class="site-header__toggle"
           type="button"
           aria-label="Toggle menu"
           aria-expanded="false"
-          aria-controls="mainNav"
+          aria-controls="site-nav"
         >
-          <span></span><span></span><span></span>
+          <span class="site-header__toggle-bar"></span>
+          <span class="site-header__toggle-bar"></span>
+          <span class="site-header__toggle-bar"></span>
         </button>
       </div>
     </header>
 
-    <!-- HERO / VANITY STAGE -->
-    <section class="hero">
-      <div class="hero-bg" id="heroBg"></div>
-      <div class="wrap hero-inner">
-        <div class="hero-copy">
-          <span class="eyebrow">New York &amp; Nationwide Trial Lawyers</span>
-          <h1>
-            Elite Class&nbsp;Action <span class="amp">&amp;</span> Litigation
-            Firm
-          </h1>
-          <p class="lede">When clients can't afford to lose.</p>
-          <p class="sub">
-            For the most complex class actions and commercial disputes in the
-            country, plaintiffs turn to a firm with an unparalleled record of
-            courtroom victories &mdash; and over $1 billion recovered.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn-gold"
-              >Schedule a Free Consultation
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__content">
+          <div class="hero__copy">
+            <span class="eyebrow"
+              >Sultzer &amp; Lipari &mdash; Trial Attorneys</span
+            >
+            <h1 class="hero__title">
+              Elite Class Action &amp; Litigation Firm
+            </h1>
+            <p class="hero__subtitle">When Clients Can't Afford To Lose.</p>
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--gold"
+                >Schedule a Free Consultation</a
               >
-                <path d="M5 12h14M13 6l6 6-6 6" />
-              </svg>
-            </a>
-            <a href="tel:8005520265" class="btn-ghost">(800) 552-0265</a>
+              <a href="tel:8005520265" class="btn btn--outline"
+                >Call (800) 552-0265</a
+              >
+            </div>
           </div>
         </div>
-        <div class="hero-portrait">
-          <div class="portrait-frame">
+        <div class="hero__attorney">
+          <div class="hero__attorney-shadow" aria-hidden="true"></div>
+          <img
+            class="hero__attorney-image"
+            src="assets/images/hero-attorney.png"
+            alt="Sultzer &amp; Lipari attorneys"
+            width="1000"
+            height="795"
+          />
+        </div>
+      </section>
+
+      <section class="accolades">
+        <div class="container accolades__inner">
+          <div class="accolades__badge">
+            <div class="accolades__icon" aria-hidden="true">
+              <svg viewBox="0 0 576 512">
+                <path
+                  d="M259.3 17.8L194.5 152.6 48.9 174.7c-26.2 3.9-36.7 36.1-17.7 54.6l105.4 102.8L86.2 467.9c-4.3 4.2-1.2 11.6 5 11.6h96.8c3.3 0 6.4-1.6 8.3-4.3l27.5-38.6 64.3 62.8c2 2 4.7 3 7.4 3h96.8c6.2 0 9.3-7.4 5-11.6L313.1 367l105.4-102.8c19-18.5 5.5-50.7-17.7-54.6L318.5 17.8c-2.9-6-11.4-6-14.2 0z"
+                />
+              </svg>
+            </div>
+            <p class="accolades__text">
+              <span>$1B+</span>Recovered For Our Clients
+            </p>
+          </div>
+          <div class="accolades__badge">
+            <div class="accolades__icon" aria-hidden="true">
+              <svg viewBox="0 0 448 512">
+                <path
+                  d="M224 0c17.7 0 32 14.3 32 32V51.2c76.3 8.5 136.7 68.9 145.2 145.3H448c17.7 0 32 14.3 32 32s-14.3 32-32 32H401.2C392.7 368.1 320.3 437 224 445.8V512c0 17.7-14.3 32-32 32s-32-14.3-32-32V445.8C64.3 437-8.1 368.1-16.6 290.5H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H47.2C55.7 83.9 128.1 15 224 6.2V32c0-17.7 14.3-32 32-32z"
+                />
+              </svg>
+            </div>
+            <p class="accolades__text">
+              <span>Nationwide</span>Litigation &amp; Trial Practice
+            </p>
+          </div>
+          <div class="accolades__badge">
+            <div class="accolades__icon" aria-hidden="true">
+              <svg viewBox="0 0 640 512">
+                <path
+                  d="M320 32a32 32 0 0 1 32 32v13.7a191.9 191.9 0 0 1 174.4 50.3c9.9 4.3 19.3 9.2 28.1 14.6l-8.8 24.6-40.6-18.3c-12.8-5.8-26.5-8.7-40.1-8.7-14.8 0-29.5 3.3-43.1 10.1L288 160c-5.9-2.9-12.5-4.4-19.2-4.4s-13.3 1.5-19.2 4.4L105.4 98.1C91.8 91.3 77.1 88 62.3 88c-13.6 0-27.3 2.9-40.1 8.7L-18.4 115l-8.8-24.6c8.8-5.4 18.2-10.3 28.1-14.6A191.9 191.9 0 0 1 256 77.7V32a32 32 0 0 1 32-32z"
+                />
+              </svg>
+            </div>
+            <p class="accolades__text">
+              <span>Class Action</span>Leaders in Complex Litigation
+            </p>
+          </div>
+          <div class="accolades__badge">
+            <div class="accolades__icon" aria-hidden="true">
+              <svg viewBox="0 0 640 512">
+                <path
+                  d="M323.4 85.2l-96 224a32 32 0 1 1-58.8-25.4l96-224a32 32 0 1 1 58.8 25.4zM496 224a32 32 0 1 1 64 0 32 32 0 1 1-64 0zM256 96a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM128 224a32 32 0 1 1 64 0 32 32 0 1 1-64 0zM64 416a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"
+                />
+              </svg>
+            </div>
+            <p class="accolades__text">
+              <span>Proven</span>Trial &amp; Verdict Track Record
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about__grid">
+          <div class="about__media">
             <img
-              class="atty"
-              src="images/attorney.png"
-              alt="Sultzer &amp; Lipari attorneys"
-              alt="Jason Sultzer and partner, Sultzer & Lipari"
+              src="assets/images/about.jpg"
+              alt="Sultzer &amp; Lipari law firm"
+              width="600"
+              height="600"
             />
-            <div class="floating-stat">
-              <b>$1B+</b>
-              <span>Recovered for clients</span>
-            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ACCOLADES -->
-    <div class="accolades">
-      <div class="wrap">
-        <div class="a-lead">Recognized &amp; Awarded</div>
-        <div class="badge">
-          <div class="seal">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-            >
-              <path
-                d="M12 2l2.4 5 5.6.7-4 4 1 5.6L12 19l-5 2.6 1-5.6-4-4 5.6-.7z"
-              />
-            </svg>
-          </div>
-          <small>Super<br />Lawyers</small>
-        </div>
-        <div class="badge">
-          <div class="seal">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-            >
-              <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z" />
-            </svg>
-          </div>
-          <small>AV Preeminent<br />Rated</small>
-        </div>
-        <div class="badge">
-          <div class="seal">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-            >
-              <circle cx="12" cy="10" r="6" />
-              <path d="M9 15l-2 6 5-3 5 3-2-6" />
-            </svg>
-          </div>
-          <small>Best Lawyers<br />in America</small>
-        </div>
-        <div class="badge">
-          <div class="seal">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-            >
-              <path d="M3 6h18M3 12h18M3 18h18" />
-              <circle cx="12" cy="12" r="3" fill="currentColor" />
-            </svg>
-          </div>
-          <small>Multi-Million<br />Dollar Forum</small>
-        </div>
-        <div class="badge">
-          <div class="seal">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-            >
-              <path d="M12 2v20M5 7l7-5 7 5M5 7v8a7 7 0 0014 0V7" />
-            </svg>
-          </div>
-          <small>National Trial<br />Lawyers Top 100</small>
-        </div>
-      </div>
-    </div>
-
-    <!-- TWO COLUMN INTRO -->
-    <section class="intro pad" id="about">
-      <div class="wrap intro-grid">
-        <div class="intro-img reveal">
-          <div class="photo" id="introPhoto"></div>
-          <div class="frame-line"></div>
-          <div class="badge-float"><b>$1B+</b><span>Won for clients</span></div>
-        </div>
-        <div class="intro-copy reveal">
-          <span class="eyebrow">Who We Are</span>
-          <h2>New York Class Action &amp; Litigation Attorneys</h2>
-          <p class="subh">
-            Nationwide litigation leaders fighting for our clients' rights.
-          </p>
-          <p>
-            Sultzer &amp; Lipari represents the interests of plaintiffs in a
-            wide array of class action matters, personal injury, complex
-            commercial litigations, and sexual abuse / employment discrimination
-            matters. We are known for taking on the most complex cases,
-            utilizing an in-depth understanding of what motivates both
-            plaintiffs and defendants during trial and negotiations.
-          </p>
-          <p>
-            We have an unparalleled record of courtroom victories in nearly
-            every state across the U.S. We have won virtually every case we
-            tried or obtained a superb settlement along the way. Over the years,
-            our lawyers have secured over $1 billion for our clients.
-          </p>
-          <p class="special">
-            Now is the time to find out how we can help you.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRACTICE AREAS -->
-    <section class="practice pad" id="practice">
-      <div class="bg-marble" id="marbleBg"></div>
-      <div class="wrap">
-        <div class="head reveal">
-          <span class="eyebrow">What We Do</span>
-          <h2>Our Practice <em>Areas</em></h2>
-          <p>
-            Decades of trial experience concentrated on the cases that matter
-            most &mdash; when the stakes are highest and the outcome cannot be
-            left to chance.
-          </p>
-        </div>
-        <div class="pa-grid">
-          <div class="pa-card reveal">
-            <div class="ic">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.4"
-              >
-                <circle cx="9" cy="8" r="3" />
-                <circle cx="17" cy="9" r="2.4" />
-                <path
-                  d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.6 1.5-4.6 4-5"
-                />
-              </svg>
-            </div>
-            <h3>Class Actions</h3>
-            <p>
-              Representing groups of plaintiffs against corporate defendants in
-              consumer fraud, defective products, and large-scale wrongdoing
-              nationwide.
+          <div class="about__content">
+            <span class="eyebrow">About Our Firm</span>
+            <h2 class="about__title">
+              New York Class Action &amp; Litigation Attorneys
+            </h2>
+            <p class="about__subtitle">
+              Nationwide Litigation Leaders Fighting For Our Clients' Rights
             </p>
-            <a href="#contact" class="more"
-              >Learn More
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
-              >
-                <path d="M5 12h14M13 6l6 6-6 6" /></svg
-            ></a>
-          </div>
-          <div class="pa-card reveal">
-            <div class="ic">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.4"
-              >
-                <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6" />
-              </svg>
-            </div>
-            <h3>Commercial Litigation</h3>
-            <p>
-              Resolving high-value business disputes, breach of contract, and
-              complex commercial conflicts with strategic, results-driven
-              advocacy.
+            <p class="about__text">
+              Sultzer &amp; Lipari represents the interests of plaintiffs in a
+              wide array of class action matters, personal injury, complex
+              commercial litigations, and sexual abuse/employment discrimination
+              matters. We are known for taking on the most complex cases,
+              utilizing an in-depth understanding of what motivates both
+              plaintiffs and defendants during trial and negotiations.
             </p>
-            <a href="#contact" class="more"
-              >Learn More
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
-              >
-                <path d="M5 12h14M13 6l6 6-6 6" /></svg
-            ></a>
-          </div>
-          <div class="pa-card reveal">
-            <div class="ic">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.4"
-              >
-                <path
-                  d="M12 3v18M5 7l7-4 7 4M4 11h4l-2 5a3 3 0 01-2 0zM16 11h4l-2 5a3 3 0 01-2 0z"
-                />
-              </svg>
-            </div>
-            <h3>Personal Injury</h3>
-            <p>
-              Holding negligent parties accountable and securing full
-              compensation for victims of serious injury and catastrophic loss.
+            <p class="about__text">
+              We have an unparalleled record of courtroom victories in nearly
+              every state across the U.S. We have won virtually every case we
+              tried or obtained a superb settlement along the way. Over the
+              years, our lawyers have secured over $1 billion for our clients.
+              Now is the time to find out how we can help you.
             </p>
-            <a href="#contact" class="more"
-              >Learn More
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
-              >
-                <path d="M5 12h14M13 6l6 6-6 6" /></svg
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CASE RESULTS -->
-    <section class="results pad">
-      <div class="wrap">
-        <div class="head reveal">
-          <span class="eyebrow">A Prolific Record</span>
-          <h2>Case Results</h2>
-        </div>
-        <div class="res-grid reveal">
-          <div class="res-cell">
-            <div class="amt">$1.3 Billion</div>
-            <div class="desc">Automobile Defect</div>
-            <a href="#" class="rm">Read More</a>
-          </div>
-          <div class="res-cell">
-            <div class="amt">$30 Million</div>
-            <div class="desc">Product Liability Verdict</div>
-            <a href="#" class="rm">Read More</a>
-          </div>
-          <div class="res-cell">
-            <div class="amt">$1.6 Million</div>
-            <div class="desc">Drill Bits Deceptively Advertised</div>
-            <a href="#" class="rm">Read More</a>
-          </div>
-          <div class="res-cell">
-            <div class="amt">$12 Million</div>
-            <div class="desc">Child Wrongful Death Case</div>
-            <a href="#" class="rm">Read More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- VALUES -->
-    <section class="values pad">
-      <div class="bg" id="valuesBg"></div>
-      <div class="wrap">
-        <div class="head reveal">
-          <span class="eyebrow">The Sultzer &amp; Lipari Difference</span>
-          <h2>Why Choose <em>Our Firm?</em></h2>
-        </div>
-        <div class="val-grid reveal">
-          <div class="val-cell">
-            <div class="val-num">01</div>
-            <div>
-              <h3>Client-Centered Commitment</h3>
-              <p>
-                Every case is handled with the personal attention, transparency,
-                and dedication our clients deserve from the first call to final
-                resolution.
-              </p>
-            </div>
-          </div>
-          <div class="val-cell">
-            <div class="val-num">02</div>
-            <div>
-              <h3>Leaders in Class Actions</h3>
-              <p>
-                We take on the most complex multi-party cases other firms avoid,
-                leveraging deep experience against the largest corporate
-                defendants.
-              </p>
-            </div>
-          </div>
-          <div class="val-cell">
-            <div class="val-num">03</div>
-            <div>
-              <h3>Impeccable Reputation</h3>
-              <p>
-                Recognized by peers, courts, and clients alike for integrity,
-                skill, and an uncompromising standard of advocacy.
-              </p>
-            </div>
-          </div>
-          <div class="val-cell">
-            <div class="val-num">04</div>
-            <div>
-              <h3>A Prolific Record of Results</h3>
-              <p>
-                Over $1 billion recovered and a near-perfect trial record
-                &mdash; we win, or we secure a superb settlement along the way.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIAL -->
-    <section class="testi pad">
-      <div class="wrap reveal">
-        <span class="quote-mark">&ldquo;</span>
-        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <blockquote>
-          My research found that he is the best in his field.
-        </blockquote>
-        <cite>&mdash; John, Verified Client</cite>
-      </div>
-    </section>
-
-    <!-- CTA STRIP -->
-    <section class="ctastrip" id="contact">
-      <div class="ac"></div>
-      <div class="wrap">
-        <h2>Now is the time to find out <em>how we can help you.</em></h2>
-        <div class="ct-actions">
-          <a href="tel:8005520265" class="phone">(800) 552-0265</a>
-          <a href="#contact" class="btn-gold">Schedule a Free Consultation</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="wrap">
-        <div class="foot-grid">
-          <div>
-            <div class="foot-brand">
-              <img
-                src="images/logo.png"
-                alt="Sultzer &amp; Lipari"
-                alt="Sultzer & Lipari"
-              />
-            </div>
-            <p>
+            <p class="about__highlight">
               Call (800) 552-0265 or contact us online to discuss your needs
-              with our team today. Representing plaintiffs nationwide from our
-              New York offices.
+              with our team today.
             </p>
           </div>
-          <div>
-            <h4>Practice Areas</h4>
-            <ul>
-              <li><a href="#practice">Class Actions</a></li>
-              <li><a href="#practice">Commercial Litigation</a></li>
-              <li><a href="#practice">Personal Injury</a></li>
-              <li><a href="#practice">Employment Discrimination</a></li>
-              <li><a href="#practice">Other Practice Areas</a></li>
-            </ul>
+        </div>
+      </section>
+
+      <section class="practice" id="practice-areas">
+        <div class="container">
+          <header class="section-head">
+            <span class="eyebrow">What We Handle</span>
+            <h2 class="section-head__title">Our Practice Areas</h2>
+          </header>
+          <div class="practice__grid">
+            <article class="practice__card" id="class-actions">
+              <div class="practice__thumb">
+                <img
+                  src="assets/images/hero-bg.jpg"
+                  alt="Class action litigation"
+                  width="600"
+                  height="400"
+                />
+              </div>
+              <div class="practice__body">
+                <h3 class="practice__title">Class Actions</h3>
+                <p class="practice__text">
+                  Representing plaintiffs nationwide in complex, high-stakes
+                  class action litigation against corporations and institutions.
+                </p>
+                <a class="practice__link" href="#contact">Learn More</a>
+              </div>
+            </article>
+            <article class="practice__card" id="commercial-litigation">
+              <div class="practice__thumb">
+                <img
+                  src="assets/images/practice-commercial.jpg"
+                  alt="Commercial litigation"
+                  width="600"
+                  height="400"
+                />
+              </div>
+              <div class="practice__body">
+                <h3 class="practice__title">Commercial Litigation</h3>
+                <p class="practice__text">
+                  Aggressive representation in business disputes, contract
+                  matters, and complex commercial disagreements.
+                </p>
+                <a class="practice__link" href="#contact">Learn More</a>
+              </div>
+            </article>
+            <article class="practice__card" id="other-practice-areas">
+              <div class="practice__thumb">
+                <img
+                  src="assets/images/practice-personal-injury.jpg"
+                  alt="Personal injury litigation"
+                  width="600"
+                  height="400"
+                />
+              </div>
+              <div class="practice__body">
+                <h3 class="practice__title">Personal Injury</h3>
+                <p class="practice__text">
+                  Fighting for full and fair compensation for individuals
+                  injured due to the negligence of others.
+                </p>
+                <a class="practice__link" href="#contact">Learn More</a>
+              </div>
+            </article>
           </div>
-          <div>
-            <h4>Firm</h4>
-            <ul>
+        </div>
+      </section>
+
+      <section class="results">
+        <div class="results__overlay" aria-hidden="true"></div>
+        <div class="container results__inner">
+          <header class="section-head section-head--light">
+            <span class="eyebrow">Track Record</span>
+            <h2 class="section-head__title">Case Results</h2>
+          </header>
+          <div class="results__grid">
+            <article class="results__card">
+              <p class="results__amount">$1.3 Billion</p>
+              <p class="results__label">Automobile Defect<br />Read More</p>
+            </article>
+            <article class="results__card">
+              <p class="results__amount">$30 Million</p>
+              <p class="results__label">
+                Product Liability Verdict<br />Read More
+              </p>
+            </article>
+            <article class="results__card">
+              <p class="results__amount">$1.6 Million</p>
+              <p class="results__label">
+                Drill Bits Deceptively Advertised<br />Read More
+              </p>
+            </article>
+            <article class="results__card">
+              <p class="results__amount">$12 Million</p>
+              <p class="results__label">
+                Child Wrongful Death Case<br />Read More
+              </p>
+            </article>
+          </div>
+          <p class="results__disclaimer">
+            Past results do not guarantee or predict a similar outcome in any
+            future case. Every case is different and must be evaluated on its
+            own merits.
+          </p>
+        </div>
+      </section>
+
+      <section class="values" id="attorneys">
+        <div class="container">
+          <header class="section-head">
+            <span class="eyebrow">Why Sultzer &amp; Lipari</span>
+            <h2 class="section-head__title">Why Choose Our Firm?</h2>
+          </header>
+          <div class="values__grid">
+            <article class="values__card">
+              <div class="values__icon" aria-hidden="true">
+                <svg viewBox="0 0 512 512">
+                  <path
+                    d="M256 0c-53 0-96 43-96 96 0 41.6 26.5 77 63.6 90.2C188.5 99.7 176 129.6 176 160c0 26.5 21.5 48 48 48h32v144c0 26.5 21.5 48 48 48s48-21.5 48-48V208h32c26.5 0 48-21.5 48-48 0-30.4-12.5-60.3-31.6-73.8C352 43 309 0 256 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="values__title">Client-Centered Commitment</h3>
+              <a class="values__link" href="#contact">Read More</a>
+            </article>
+            <article class="values__card">
+              <div class="values__icon" aria-hidden="true">
+                <svg viewBox="0 0 640 512">
+                  <path
+                    d="M320 32a32 32 0 0 1 32 32v13.7a191.9 191.9 0 0 1 174.4 50.3c9.9 4.3 19.3 9.2 28.1 14.6l-8.8 24.6-40.6-18.3c-12.8-5.8-26.5-8.7-40.1-8.7-14.8 0-29.5 3.3-43.1 10.1L288 160c-5.9-2.9-12.5-4.4-19.2-4.4s-13.3 1.5-19.2 4.4L105.4 98.1C91.8 91.3 77.1 88 62.3 88c-13.6 0-27.3 2.9-40.1 8.7L-18.4 115l-8.8-24.6c8.8-5.4 18.2-10.3 28.1-14.6A191.9 191.9 0 0 1 256 77.7V32a32 32 0 0 1 32-32z"
+                  />
+                </svg>
+              </div>
+              <h3 class="values__title">Leaders in Class Actions</h3>
+              <a class="values__link" href="#contact">Read More</a>
+            </article>
+            <article class="values__card">
+              <div class="values__icon" aria-hidden="true">
+                <svg viewBox="0 0 576 512">
+                  <path
+                    d="M259.3 17.8L194.5 152.6 48.9 174.7c-26.2 3.9-36.7 36.1-17.7 54.6l105.4 102.8L86.2 467.9c-4.3 4.2-1.2 11.6 5 11.6h96.8c3.3 0 6.4-1.6 8.3-4.3l27.5-38.6 64.3 62.8c2 2 4.7 3 7.4 3h96.8c6.2 0 9.3-7.4 5-11.6L313.1 367l105.4-102.8c19-18.5 5.5-50.7-17.7-54.6L318.5 17.8c-2.9-6-11.4-6-14.2 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="values__title">Impeccable Reputation</h3>
+              <a class="values__link" href="#contact">Read More</a>
+            </article>
+            <article class="values__card">
+              <div class="values__icon" aria-hidden="true">
+                <svg viewBox="0 0 448 512">
+                  <path
+                    d="M400 32H336V16c0-8.8-7.2-16-16-16s-16 7.2-16 16v16H128V16c0-8.8-7.2-16-16-16S96 7.2 96 16v16H48C21.5 32 0 53.5 0 80v96 352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V176c0-26.5-21.5-48-48-48H416V80c0-26.5-21.5-48-48-48z"
+                  />
+                </svg>
+              </div>
+              <h3 class="values__title">A Prolific Record of Results</h3>
+              <a class="values__link" href="#contact">Read More</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial">
+        <div class="container testimonial__inner">
+          <span class="eyebrow">Client Voices</span>
+          <p class="testimonial__mark" aria-hidden="true">&ldquo;</p>
+          <p class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</p>
+          <blockquote class="testimonial__quote">
+            &ldquo;My research found that he is the best in his field.&rdquo;
+          </blockquote>
+          <cite class="testimonial__author">&mdash; John</cite>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact__grid">
+          <div class="contact__info">
+            <span class="eyebrow">Get In Touch</span>
+            <h2 class="contact__title">Schedule Your Free Consultation</h2>
+            <p class="contact__text">
+              Speak directly with our team about your case. We respond quickly
+              and treat every inquiry with the seriousness it deserves.
+            </p>
+            <div class="contact__detail">
+              <div class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 384 512">
+                  <path
+                    d="M172.3 501.7C27 291 0 269.4 0 192 0 86 86 0 192 0s192 86 192 192c0 77.4-27 99-172.3 309.7-4.8 7.3-15.5 7.3-20.3 0zM192 272a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <span class="contact__label">Office Address</span>
+                <p>
+                  85 Civic Center Plaza, Suite 200<br />Poughkeepsie, NY 12601
+                </p>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 512 512">
+                  <path
+                    d="M493.4 24.6l-104-24a24 24 0 0 0-27.5 13.9l-48 112a24 24 0 0 0 6.9 27.6l60.6 49.6a24 24 0 0 0 29.7 1.9l88.2-44.2c24.5 51.7 39.8 109.5 44.5 170.5a24 24 0 0 0 24 24h112a24 24 0 0 0 24-24C512 263.4 431.6 96.6 493.4 24.6z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <span class="contact__label">Call Us</span>
+                <p>(800) 552-0265</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact__form-card">
+            <h3 class="contact__form-title">Request a Free Case Review</h3>
+            <p class="contact__form-subtitle">
+              Fields marked required help us respond faster.
+            </p>
+            <form class="form" action="#" method="post">
+              <div class="form__grid">
+                <div class="form__field">
+                  <label class="form__label" for="f-name">Name</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="f-name"
+                    name="name"
+                    placeholder="Full name"
+                  />
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="f-email">Email</label>
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="f-email"
+                    name="email"
+                    placeholder="you@email.com"
+                  />
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="f-phone">Phone</label>
+                  <input
+                    class="form__input"
+                    type="tel"
+                    id="f-phone"
+                    name="phone"
+                    placeholder="(555) 555-5555"
+                  />
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="f-new"
+                    >Are You a New Client?</label
+                  >
+                  <select class="form__input" id="f-new" name="new-client">
+                    <option value="">Select one</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+                <div class="form__field form__field--full">
+                  <label class="form__label" for="f-message">Message</label>
+                  <textarea
+                    class="form__input form__input--textarea"
+                    id="f-message"
+                    name="message"
+                    placeholder="Tell us briefly about your case"
+                  ></textarea>
+                </div>
+              </div>
+              <button class="btn btn--gold form__submit" type="submit">
+                Submit Case Review
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <img
+              src="assets/images/logo.png"
+              alt="Sultzer &amp; Lipari"
+              width="500"
+              height="252"
+            />
+            <p>
+              Sultzer &amp; Lipari represents plaintiffs nationwide in class
+              action, personal injury, and complex commercial litigation
+              matters.
+            </p>
+          </div>
+          <div class="site-footer__col">
+            <h4 class="site-footer__heading">Navigate</h4>
+            <ul class="site-footer__list">
+              <li><a href="#home">Home</a></li>
               <li><a href="#about">About Us</a></li>
-              <li><a href="#about">Our Attorneys</a></li>
-              <li><a href="#">Case Results</a></li>
+              <li><a href="#attorneys">Our Attorneys</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
-          <div>
-            <h4>Office</h4>
-            <ul>
-              <li>85 Civic Center Plaza</li>
-              <li>Suite 200</li>
-              <li>Poughkeepsie, NY 12601</li>
+          <div class="site-footer__col">
+            <h4 class="site-footer__heading">Practice Areas</h4>
+            <ul class="site-footer__list">
+              <li><a href="#class-actions">Class Actions</a></li>
+              <li>
+                <a href="#commercial-litigation">Commercial Litigation</a>
+              </li>
+              <li><a href="#other-practice-areas">Other Practice Areas</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__col">
+            <h4 class="site-footer__heading">Contact</h4>
+            <ul class="site-footer__list">
               <li><a href="tel:8005520265">(800) 552-0265</a></li>
+              <li><a href="#contact">85 Civic Center Plaza, Suite 200</a></li>
+              <li><a href="#contact">Poughkeepsie, NY 12601</a></li>
             </ul>
           </div>
         </div>
-        <div class="foot-bottom">
-          <span>&copy; 2026 Sultzer &amp; Lipari. All rights reserved.</span>
+        <div class="site-footer__bottom">
+          <span>&copy; 2026 Sultzer &amp; Lipari. All Rights Reserved.</span>
           <span
             >Attorney Advertising. Prior results do not guarantee a similar
             outcome.</span
